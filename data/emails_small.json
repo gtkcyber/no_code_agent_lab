@@ -1,0 +1,101 @@
+[
+  {
+    "id": "EMAIL-001",
+    "timestamp": "2025-06-15T08:00:00Z",
+    "from_address": "security-alert@micros0ft-verify.com",
+    "from_display_name": "Microsoft Security Team",
+    "to_address": "john.doe@company.com",
+    "subject": "URGENT: Your account has been compromised",
+    "body": "Dear User,\n\nWe have detected unusual sign-in activity on your Microsoft 365 account. Your account may have been compromised by an unauthorized third party.\n\nTo secure your account, please verify your identity immediately by clicking the link below:\n\nhttps://micros0ft-verify.com/secure/login?id=8f3a2b\n\nIf you do not verify within 24 hours, your account will be permanently suspended.\n\nMicrosoft Security Team",
+    "urls": [
+      "https://micros0ft-verify.com/secure/login?id=8f3a2b"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "credential_harvesting"
+  },
+  {
+    "id": "EMAIL-026",
+    "timestamp": "2025-06-15T09:00:00Z",
+    "from_address": "sarah.smith@company.com",
+    "from_display_name": "Sarah Smith",
+    "to_address": "engineering-team@company.com",
+    "subject": "Sprint planning meeting moved to 2 PM",
+    "body": "Hi team,\n\nQuick heads up - I've moved the sprint planning meeting from 10 AM to 2 PM today to accommodate the client demo this morning.\n\nCalendar invites have been updated. Same Zoom link as always.\n\nThanks,\nSarah",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-006",
+    "timestamp": "2025-06-15T20:00:00Z",
+    "from_address": "ceo@company-exec.com",
+    "from_display_name": "Robert Zhang, CEO",
+    "to_address": "accounting@company.com",
+    "subject": "Urgent wire transfer needed - CONFIDENTIAL",
+    "body": "Hi Accounting Team,\n\nI need you to process an urgent wire transfer of $47,500 to a new vendor. This is for a confidential acquisition deal that cannot wait.\n\nPlease wire to:\nBank: First National Bank\nAccount: 4829173650\nRouting: 021000089\n\nThis must be completed before end of business today. Do NOT discuss this with anyone else as it is under NDA.\n\nI'm in meetings all day so please just process it.\n\nRobert Zhang\nCEO",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "bec"
+  },
+  {
+    "id": "EMAIL-035",
+    "timestamp": "2025-06-16T05:00:00Z",
+    "from_address": "invoices@acme-supplies.com",
+    "from_display_name": "Acme Supplies Billing",
+    "to_address": "ap@company.com",
+    "subject": "Invoice #2025-0847 - Office supplies order",
+    "body": "Dear Accounts Payable,\n\nPlease find attached the invoice for your recent order.\n\nInvoice: #2025-0847\nOrder Date: June 10, 2025\nAmount: $1,247.50\nDue Date: July 10, 2025\nPayment Terms: Net 30\n\nItems ordered: Printer paper (20 boxes), toner cartridges (10), whiteboard markers (50 packs)\n\nQuestions? Contact billing@acme-supplies.com or call 555-0100.\n\nThank you for your business!\nAcme Supplies",
+    "urls": [],
+    "attachments": [
+      {
+        "filename": "Invoice_2025-0847.pdf",
+        "type": "application/pdf"
+      }
+    ],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-049",
+    "timestamp": "2025-06-17T09:00:00Z",
+    "from_address": "partner-program@cloudflare-partners.com",
+    "from_display_name": "Cloudflare Partner Program",
+    "to_address": "it-security@company.com",
+    "subject": "Exclusive: Free Cloudflare Enterprise trial for your organization",
+    "body": "Hi Security Team,\n\nCongratulations! Your organization has been selected for an exclusive 90-day free trial of Cloudflare Enterprise.\n\nBenefits include:\n- Advanced DDoS protection\n- Web Application Firewall (WAF)\n- Bot management\n- 24/7 priority support\n\nActivate your trial: https://cloudflare-partners.com/trial/activate?org=company\n\nThis offer expires in 7 days.\n\nBest,\nCloudflare Partner Team\n\nIf you received this email in error, please disregard.",
+    "urls": [
+      "https://cloudflare-partners.com/trial/activate?org=company"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "softfail",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "suspicious",
+    "attack_type": null
+  }
+]

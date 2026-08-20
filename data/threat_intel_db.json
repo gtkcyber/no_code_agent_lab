@@ -1,0 +1,410 @@
+{
+  "malicious_domains": [
+    {
+      "domain": "micros0ft-verify.com",
+      "category": "credential_harvesting",
+      "first_seen": "2025-06-10",
+      "confidence": 0.98
+    },
+    {
+      "domain": "dropb0x-share.net",
+      "category": "credential_harvesting",
+      "first_seen": "2025-06-12",
+      "confidence": 0.95
+    },
+    {
+      "domain": "g00gle-workspace.com",
+      "category": "credential_harvesting",
+      "first_seen": "2025-06-08",
+      "confidence": 0.97
+    },
+    {
+      "domain": "amazn-prime.com",
+      "category": "credential_harvesting",
+      "first_seen": "2025-06-14",
+      "confidence": 0.96
+    },
+    {
+      "domain": "linkedn-verify.com",
+      "category": "credential_harvesting",
+      "first_seen": "2025-06-11",
+      "confidence": 0.94
+    },
+    {
+      "domain": "company-exec.com",
+      "category": "bec",
+      "first_seen": "2025-06-13",
+      "confidence": 0.9
+    },
+    {
+      "domain": "company-finance.net",
+      "category": "bec",
+      "first_seen": "2025-06-14",
+      "confidence": 0.88
+    },
+    {
+      "domain": "supplierportal-pay.com",
+      "category": "bec",
+      "first_seen": "2025-06-09",
+      "confidence": 0.92
+    },
+    {
+      "domain": "company-legal-dept.com",
+      "category": "bec",
+      "first_seen": "2025-06-12",
+      "confidence": 0.89
+    },
+    {
+      "domain": "company-board.org",
+      "category": "bec",
+      "first_seen": "2025-06-15",
+      "confidence": 0.87
+    },
+    {
+      "domain": "totallylegit-invoicing.com",
+      "category": "malware_delivery",
+      "first_seen": "2025-06-01",
+      "confidence": 0.99
+    },
+    {
+      "domain": "company-mfp.com",
+      "category": "malware_delivery",
+      "first_seen": "2025-06-10",
+      "confidence": 0.93
+    },
+    {
+      "domain": "fedx-tracking.com",
+      "category": "malware_delivery",
+      "first_seen": "2025-06-05",
+      "confidence": 0.97
+    },
+    {
+      "domain": "it-support-portal.net",
+      "category": "malware_delivery",
+      "first_seen": "2025-06-11",
+      "confidence": 0.95
+    },
+    {
+      "domain": "careers-apply.com",
+      "category": "malware_delivery",
+      "first_seen": "2025-06-13",
+      "confidence": 0.91
+    },
+    {
+      "domain": "partnerco-consulting.com",
+      "category": "spear_phishing",
+      "first_seen": "2025-06-14",
+      "confidence": 0.85
+    },
+    {
+      "domain": "university-connect.net",
+      "category": "spear_phishing",
+      "first_seen": "2025-06-09",
+      "confidence": 0.9
+    },
+    {
+      "domain": "internal-hr-survey.com",
+      "category": "spear_phishing",
+      "first_seen": "2025-06-12",
+      "confidence": 0.88
+    },
+    {
+      "domain": "z00m-meeting.com",
+      "category": "spear_phishing",
+      "first_seen": "2025-06-11",
+      "confidence": 0.93
+    },
+    {
+      "domain": "blackhat-register.com",
+      "category": "spear_phishing",
+      "first_seen": "2025-06-13",
+      "confidence": 0.86
+    },
+    {
+      "domain": "subscription-renewal-notice.com",
+      "category": "vishing",
+      "first_seen": "2025-06-08",
+      "confidence": 0.94
+    },
+    {
+      "domain": "geek-squad-renewal.com",
+      "category": "vishing",
+      "first_seen": "2025-06-10",
+      "confidence": 0.92
+    },
+    {
+      "domain": "bank-security-dept.com",
+      "category": "vishing",
+      "first_seen": "2025-06-07",
+      "confidence": 0.96
+    },
+    {
+      "domain": "irs-refund-dept.com",
+      "category": "vishing",
+      "first_seen": "2025-06-06",
+      "confidence": 0.98
+    },
+    {
+      "domain": "paypal-resolution.com",
+      "category": "vishing",
+      "first_seen": "2025-06-09",
+      "confidence": 0.93
+    }
+  ],
+  "safe_domains": [
+    {
+      "domain": "company.com",
+      "category": "internal",
+      "verified": true
+    },
+    {
+      "domain": "company.workday.com",
+      "category": "hr_platform",
+      "verified": true
+    },
+    {
+      "domain": "company.learningplatform.com",
+      "category": "training",
+      "verified": true
+    },
+    {
+      "domain": "company.atlassian.net",
+      "category": "project_management",
+      "verified": true
+    },
+    {
+      "domain": "company.zoom.us",
+      "category": "communications",
+      "verified": true
+    },
+    {
+      "domain": "company.slack.com",
+      "category": "communications",
+      "verified": true
+    },
+    {
+      "domain": "company.okta.com",
+      "category": "identity",
+      "verified": true
+    },
+    {
+      "domain": "company.pagerduty.com",
+      "category": "monitoring",
+      "verified": true
+    },
+    {
+      "domain": "sso.company.com",
+      "category": "identity",
+      "verified": true
+    },
+    {
+      "domain": "github.com",
+      "category": "development",
+      "verified": true
+    },
+    {
+      "domain": "console.aws.amazon.com",
+      "category": "cloud",
+      "verified": true
+    },
+    {
+      "domain": "noreply@aws.amazon.com",
+      "category": "cloud",
+      "verified": true
+    },
+    {
+      "domain": "acme-supplies.com",
+      "category": "vendor",
+      "verified": true
+    },
+    {
+      "domain": "slack.com",
+      "category": "communications",
+      "verified": true
+    },
+    {
+      "domain": "zoom.us",
+      "category": "communications",
+      "verified": true
+    },
+    {
+      "domain": "atlassian.com",
+      "category": "project_management",
+      "verified": true
+    },
+    {
+      "domain": "linkedin.com",
+      "category": "social_professional",
+      "verified": true
+    },
+    {
+      "domain": "datadoghq.com",
+      "category": "monitoring",
+      "verified": true
+    },
+    {
+      "domain": "okta.com",
+      "category": "identity",
+      "verified": true
+    },
+    {
+      "domain": "expensify.com",
+      "category": "finance",
+      "verified": true
+    },
+    {
+      "domain": "google.com",
+      "category": "productivity",
+      "verified": true
+    },
+    {
+      "domain": "snyk.io",
+      "category": "security",
+      "verified": true
+    },
+    {
+      "domain": "pagerduty.com",
+      "category": "monitoring",
+      "verified": true
+    },
+    {
+      "domain": "calendly.com",
+      "category": "scheduling",
+      "verified": true
+    }
+  ],
+  "known_phishing_senders": [
+    {
+      "email": "security-alert@micros0ft-verify.com",
+      "reported_count": 142,
+      "first_reported": "2025-06-10"
+    },
+    {
+      "email": "no-reply@dropb0x-share.net",
+      "reported_count": 89,
+      "first_reported": "2025-06-12"
+    },
+    {
+      "email": "admin@g00gle-workspace.com",
+      "reported_count": 67,
+      "first_reported": "2025-06-08"
+    },
+    {
+      "email": "ceo@company-exec.com",
+      "reported_count": 23,
+      "first_reported": "2025-06-13"
+    },
+    {
+      "email": "invoice@totallylegit-invoicing.com",
+      "reported_count": 256,
+      "first_reported": "2025-06-01"
+    },
+    {
+      "email": "helpdesk@it-support-portal.net",
+      "reported_count": 178,
+      "first_reported": "2025-06-11"
+    },
+    {
+      "email": "tax-notice@irs-refund-dept.com",
+      "reported_count": 312,
+      "first_reported": "2025-06-06"
+    },
+    {
+      "email": "alert@bank-security-dept.com",
+      "reported_count": 198,
+      "first_reported": "2025-06-07"
+    }
+  ],
+  "url_reputation": [
+    {
+      "url": "https://micros0ft-verify.com/secure/login",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.98
+    },
+    {
+      "url": "https://dropb0x-share.net/view/",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.95
+    },
+    {
+      "url": "https://g00gle-workspace.com/storage/",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.97
+    },
+    {
+      "url": "https://amazn-prime.com/update-payment",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.96
+    },
+    {
+      "url": "https://fedx-tracking.com/track/",
+      "verdict": "malicious",
+      "threat_type": "malware_distribution",
+      "confidence": 0.97
+    },
+    {
+      "url": "https://partnerco-consulting.com/shared/",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.85
+    },
+    {
+      "url": "https://z00m-meeting.com/rec/",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.93
+    },
+    {
+      "url": "https://blackhat-register.com/",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.86
+    },
+    {
+      "url": "https://internal-hr-survey.com/",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.88
+    },
+    {
+      "url": "https://linkedn-verify.com/",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.94
+    },
+    {
+      "url": "https://university-connect.net/",
+      "verdict": "malicious",
+      "threat_type": "credential_phishing",
+      "confidence": 0.9
+    },
+    {
+      "url": "https://security-weekly.com/",
+      "verdict": "clean",
+      "threat_type": null,
+      "confidence": 0.8
+    },
+    {
+      "url": "https://cloudflare-partners.com/",
+      "verdict": "suspicious",
+      "threat_type": "potential_phishing",
+      "confidence": 0.55
+    },
+    {
+      "url": "https://talent-hub-pro.com/",
+      "verdict": "unknown",
+      "threat_type": null,
+      "confidence": 0.3
+    },
+    {
+      "url": "https://calendly.com/",
+      "verdict": "clean",
+      "threat_type": null,
+      "confidence": 0.95
+    }
+  ]
+}

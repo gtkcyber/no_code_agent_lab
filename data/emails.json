@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "EMAIL-001",
+    "timestamp": "2025-06-15T08:00:00Z",
+    "from_address": "security-alert@micros0ft-verify.com",
+    "from_display_name": "Microsoft Security Team",
+    "to_address": "john.doe@company.com",
+    "subject": "URGENT: Your account has been compromised",
+    "body": "Dear User,\n\nWe have detected unusual sign-in activity on your Microsoft 365 account. Your account may have been compromised by an unauthorized third party.\n\nTo secure your account, please verify your identity immediately by clicking the link below:\n\nhttps://micros0ft-verify.com/secure/login?id=8f3a2b\n\nIf you do not verify within 24 hours, your account will be permanently suspended.\n\nMicrosoft Security Team",
+    "urls": [
+      "https://micros0ft-verify.com/secure/login?id=8f3a2b"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "credential_harvesting"
+  },
+  {
+    "id": "EMAIL-026",
+    "timestamp": "2025-06-15T09:00:00Z",
+    "from_address": "sarah.smith@company.com",
+    "from_display_name": "Sarah Smith",
+    "to_address": "engineering-team@company.com",
+    "subject": "Sprint planning meeting moved to 2 PM",
+    "body": "Hi team,\n\nQuick heads up - I've moved the sprint planning meeting from 10 AM to 2 PM today to accommodate the client demo this morning.\n\nCalendar invites have been updated. Same Zoom link as always.\n\nThanks,\nSarah",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-002",
+    "timestamp": "2025-06-15T10:00:00Z",
+    "from_address": "no-reply@dropb0x-share.net",
+    "from_display_name": "Dropbox",
+    "to_address": "sarah.smith@company.com",
+    "subject": "Document shared with you: Q3_Financial_Report.pdf",
+    "body": "Hi Sarah,\n\nA document has been shared with you via Dropbox. Click below to view:\n\nhttps://dropb0x-share.net/view/Q3_Financial_Report?token=x9k2m\n\nThis link will expire in 48 hours.\n\n- The Dropbox Team",
+    "urls": [
+      "https://dropb0x-share.net/view/Q3_Financial_Report?token=x9k2m"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "credential_harvesting"
+  },
+  {
+    "id": "EMAIL-027",
+    "timestamp": "2025-06-15T11:00:00Z",
+    "from_address": "hr@company.com",
+    "from_display_name": "Human Resources",
+    "to_address": "all-staff@company.com",
+    "subject": "Reminder: Open enrollment ends Friday",
+    "body": "Dear Team,\n\nThis is a friendly reminder that the open enrollment period for 2025 benefits ends this Friday, June 20th.\n\nPlease log in to Workday to review and update your selections:\nhttps://company.workday.com/benefits\n\nIf you have questions, please contact HR at ext. 4200 or visit us in Suite 300.\n\nBest regards,\nHR Team",
+    "urls": [
+      "https://company.workday.com/benefits"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-003",
+    "timestamp": "2025-06-15T13:00:00Z",
+    "from_address": "admin@g00gle-workspace.com",
+    "from_display_name": "Google Workspace Admin",
+    "to_address": "mike.jones@company.com",
+    "subject": "Action Required: Storage quota exceeded",
+    "body": "Hello Mike,\n\nYour Google Workspace storage is 98% full. You must upgrade your plan or remove files immediately to avoid losing access.\n\nClick here to manage your storage: https://g00gle-workspace.com/storage/upgrade\n\nWarning: Emails will bounce if storage is not freed within 12 hours.\n\nGoogle Workspace Administration",
+    "urls": [
+      "https://g00gle-workspace.com/storage/upgrade"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "credential_harvesting"
+  },
+  {
+    "id": "EMAIL-028",
+    "timestamp": "2025-06-15T15:00:00Z",
+    "from_address": "mike.jones@company.com",
+    "from_display_name": "Mike Jones",
+    "to_address": "engineering-team@company.com",
+    "subject": "Code review needed: PR #482 - Auth refactor",
+    "body": "Hey everyone,\n\nI've opened PR #482 for the authentication module refactor we discussed. It's a big one (~400 lines) so I wanted to give a heads up.\n\nKey changes:\n- Migrated from session-based to JWT auth\n- Added refresh token rotation\n- Updated all middleware\n\nPR: https://github.com/company/app/pull/482\n\nWould appreciate reviews by Wednesday. Happy to walk through the changes if anyone wants a 1:1.\n\nMike",
+    "urls": [
+      "https://github.com/company/app/pull/482"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-004",
+    "timestamp": "2025-06-15T16:00:00Z",
+    "from_address": "support@amazn-prime.com",
+    "from_display_name": "Amazon Customer Service",
+    "to_address": "lisa.chen@company.com",
+    "subject": "Your Amazon order #112-4567890 has a payment issue",
+    "body": "Dear Valued Customer,\n\nWe were unable to process payment for your recent order. Your credit card on file has been declined.\n\nPlease update your payment method within 24 hours to avoid order cancellation:\nhttps://amazn-prime.com/update-payment?order=112-4567890\n\nIf you believe this is an error, please update your payment details immediately.\n\nAmazon Customer Service",
+    "urls": [
+      "https://amazn-prime.com/update-payment?order=112-4567890"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "credential_harvesting"
+  },
+  {
+    "id": "EMAIL-029",
+    "timestamp": "2025-06-15T17:00:00Z",
+    "from_address": "facilities@company.com",
+    "from_display_name": "Facilities Management",
+    "to_address": "all-staff@company.com",
+    "subject": "Building maintenance notice - June 21-22",
+    "body": "Good morning,\n\nPlease be advised that HVAC maintenance is scheduled for this weekend (June 21-22). The building will remain accessible, but temperatures may fluctuate on floors 3-5.\n\nNo action needed on your part. If you plan to work this weekend, you may want to dress in layers.\n\nQuestions? Contact facilities at ext. 5100.\n\nFacilities Management",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-005",
+    "timestamp": "2025-06-15T18:00:00Z",
+    "from_address": "noreply@linkedn-verify.com",
+    "from_display_name": "LinkedIn",
+    "to_address": "tom.wilson@company.com",
+    "subject": "Someone viewed your LinkedIn profile 47 times",
+    "body": "Hi Tom,\n\nYour profile has had 47 views this week! You appeared in 12 searches.\n\nSee who's viewing your profile:\nhttps://linkedn-verify.com/profile/views?u=tom.wilson\n\nUpgrade to Premium to unlock all viewer details.\n\nThe LinkedIn Team",
+    "urls": [
+      "https://linkedn-verify.com/profile/views?u=tom.wilson"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "credential_harvesting"
+  },
+  {
+    "id": "EMAIL-030",
+    "timestamp": "2025-06-15T19:00:00Z",
+    "from_address": "it-security@company.com",
+    "from_display_name": "IT Security",
+    "to_address": "all-staff@company.com",
+    "subject": "Mandatory security awareness training due by June 30",
+    "body": "Hi everyone,\n\nOur annual security awareness training is now available in the LMS. All employees must complete the following modules by June 30:\n\n1. Phishing Awareness (20 min)\n2. Password Security (15 min)\n3. Data Classification (15 min)\n\nAccess the training: https://company.learningplatform.com/security-2025\n\nCompletion is tracked automatically. Please reach out if you have issues accessing the platform.\n\nIT Security Team",
+    "urls": [
+      "https://company.learningplatform.com/security-2025"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-006",
+    "timestamp": "2025-06-15T20:00:00Z",
+    "from_address": "ceo@company-exec.com",
+    "from_display_name": "Robert Zhang, CEO",
+    "to_address": "accounting@company.com",
+    "subject": "Urgent wire transfer needed - CONFIDENTIAL",
+    "body": "Hi Accounting Team,\n\nI need you to process an urgent wire transfer of $47,500 to a new vendor. This is for a confidential acquisition deal that cannot wait.\n\nPlease wire to:\nBank: First National Bank\nAccount: 4829173650\nRouting: 021000089\n\nThis must be completed before end of business today. Do NOT discuss this with anyone else as it is under NDA.\n\nI'm in meetings all day so please just process it.\n\nRobert Zhang\nCEO",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "bec"
+  },
+  {
+    "id": "EMAIL-031",
+    "timestamp": "2025-06-15T21:00:00Z",
+    "from_address": "lisa.chen@company.com",
+    "from_display_name": "Lisa Chen",
+    "to_address": "product-team@company.com",
+    "subject": "Q3 product roadmap draft for review",
+    "body": "Hi Product Team,\n\nI've uploaded the Q3 product roadmap draft to Confluence. Please review before our Thursday planning session.\n\nLink: https://company.atlassian.net/wiki/spaces/PROD/pages/roadmap-q3\n\nMain themes:\n- API v2 launch\n- Mobile app redesign\n- Enterprise SSO integration\n\nLooking forward to your feedback.\n\nLisa",
+    "urls": [
+      "https://company.atlassian.net/wiki/spaces/PROD/pages/roadmap-q3"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-007",
+    "timestamp": "2025-06-15T22:00:00Z",
+    "from_address": "cfo-office@company-finance.net",
+    "from_display_name": "Patricia Moore, CFO",
+    "to_address": "payroll@company.com",
+    "subject": "Payroll update - Direct deposit change",
+    "body": "Hello Payroll,\n\nPlease update my direct deposit information effective immediately.\n\nNew bank details:\nBank: Chase Bank\nRouting: 072000326\nAccount: 9281736450\nAccount Type: Checking\n\nPlease confirm once updated. I need this done before the next pay cycle.\n\nPatricia Moore\nChief Financial Officer",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "bec"
+  },
+  {
+    "id": "EMAIL-032",
+    "timestamp": "2025-06-15T23:00:00Z",
+    "from_address": "robert.zhang@company.com",
+    "from_display_name": "Robert Zhang",
+    "to_address": "all-staff@company.com",
+    "subject": "Company all-hands meeting - June 25 at 3 PM",
+    "body": "Team,\n\nPlease join us for the monthly all-hands meeting next Wednesday at 3 PM ET.\n\nAgenda:\n- Q2 results review\n- New product announcement\n- Team recognition awards\n- Open Q&A\n\nZoom link: https://company.zoom.us/j/82917364501\nPasscode: AllHands25\n\nSee you there!\nRobert Zhang, CEO",
+    "urls": [
+      "https://company.zoom.us/j/82917364501"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-008",
+    "timestamp": "2025-06-16T00:00:00Z",
+    "from_address": "vendor-update@supplierportal-pay.com",
+    "from_display_name": "Acme Supplies - Accounts Receivable",
+    "to_address": "ap@company.com",
+    "subject": "Updated banking information for invoice payments",
+    "body": "Dear Accounts Payable,\n\nPlease note that effective immediately, our banking details have changed. All future payments for outstanding invoices should be directed to:\n\nBank: Wells Fargo\nAccount Name: Acme Supplies LLC\nAccount: 7391024856\nRouting: 121000248\n\nPlease update your records. Outstanding invoice INV-2025-0892 ($23,450) is past due and should be remitted to the new account.\n\nBest regards,\nJames Anderson\nAcme Supplies - Accounts Receivable",
+    "urls": [],
+    "attachments": [
+      {
+        "filename": "updated_bank_details.pdf",
+        "type": "application/pdf"
+      }
+    ],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "bec"
+  },
+  {
+    "id": "EMAIL-033",
+    "timestamp": "2025-06-16T01:00:00Z",
+    "from_address": "noreply@github.com",
+    "from_display_name": "GitHub",
+    "to_address": "mike.jones@company.com",
+    "subject": "[company/app] Issue #291: Fix memory leak in connection pool",
+    "body": "New issue opened by @contributor42:\n\n**Fix memory leak in connection pool**\n\nWe've noticed that the connection pool in `src/db/pool.py` is not properly releasing connections after timeout. This causes gradual memory growth in production.\n\nSteps to reproduce:\n1. Run load test with 100 concurrent connections\n2. Monitor memory usage over 1 hour\n3. Observe ~50MB/hour growth\n\n---\nReply to this email or view on GitHub:\nhttps://github.com/company/app/issues/291",
+    "urls": [
+      "https://github.com/company/app/issues/291"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-009",
+    "timestamp": "2025-06-16T02:00:00Z",
+    "from_address": "legal@company-legal-dept.com",
+    "from_display_name": "David Park, General Counsel",
+    "to_address": "hr@company.com",
+    "subject": "CONFIDENTIAL: Employee records request for legal review",
+    "body": "Hi HR Team,\n\nWe are conducting an internal compliance audit and require the following employee records ASAP:\n\n- Full names and SSNs for all employees hired in Q1-Q2 2025\n- W-2 forms for the same period\n- Current salary information\n\nPlease compile and send to this email address directly. This is legally privileged and should not be shared with anyone else.\n\nTime-sensitive - needed by EOD.\n\nDavid Park\nGeneral Counsel",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "bec"
+  },
+  {
+    "id": "EMAIL-034",
+    "timestamp": "2025-06-16T03:00:00Z",
+    "from_address": "noreply@aws.amazon.com",
+    "from_display_name": "Amazon Web Services",
+    "to_address": "devops@company.com",
+    "subject": "AWS Cost Optimization: Your monthly report",
+    "body": "Hello,\n\nYour AWS Cost Optimization report for May 2025 is ready.\n\nSummary:\n- Total spend: $12,847\n- Potential savings identified: $2,150 (17%)\n- Unused resources: 3 EC2 instances, 2 EBS volumes\n\nView detailed report: https://console.aws.amazon.com/cost-management/home\n\nTop recommendations:\n1. Right-size 5 over-provisioned EC2 instances\n2. Purchase Reserved Instances for stable workloads\n3. Delete unused EBS snapshots (47 found)\n\nAmazon Web Services",
+    "urls": [
+      "https://console.aws.amazon.com/cost-management/home"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-010",
+    "timestamp": "2025-06-16T04:00:00Z",
+    "from_address": "executive@company-board.org",
+    "from_display_name": "Margaret Ellis, Board Chair",
+    "to_address": "robert.zhang@company.com",
+    "subject": "Gift cards for employee appreciation event",
+    "body": "Robert,\n\nI need your help with something for the upcoming employee appreciation event. Can you purchase 20 Amazon gift cards at $100 each?\n\nPlease buy them today and send me the redemption codes via email. I'll reimburse you from the board discretionary fund.\n\nPlease keep this quiet - it's meant to be a surprise!\n\nThanks,\nMargaret",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "bec"
+  },
+  {
+    "id": "EMAIL-035",
+    "timestamp": "2025-06-16T05:00:00Z",
+    "from_address": "invoices@acme-supplies.com",
+    "from_display_name": "Acme Supplies Billing",
+    "to_address": "ap@company.com",
+    "subject": "Invoice #2025-0847 - Office supplies order",
+    "body": "Dear Accounts Payable,\n\nPlease find attached the invoice for your recent order.\n\nInvoice: #2025-0847\nOrder Date: June 10, 2025\nAmount: $1,247.50\nDue Date: July 10, 2025\nPayment Terms: Net 30\n\nItems ordered: Printer paper (20 boxes), toner cartridges (10), whiteboard markers (50 packs)\n\nQuestions? Contact billing@acme-supplies.com or call 555-0100.\n\nThank you for your business!\nAcme Supplies",
+    "urls": [],
+    "attachments": [
+      {
+        "filename": "Invoice_2025-0847.pdf",
+        "type": "application/pdf"
+      }
+    ],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-011",
+    "timestamp": "2025-06-16T06:00:00Z",
+    "from_address": "invoice@totallylegit-invoicing.com",
+    "from_display_name": "QuickBooks Invoice",
+    "to_address": "finance@company.com",
+    "subject": "Invoice #INV-29571 Due - Payment Required",
+    "body": "Please find attached the invoice for services rendered.\n\nInvoice Number: INV-29571\nAmount Due: $3,250.00\nDue Date: June 20, 2025\n\nPlease review the attached document and process payment at your earliest convenience.\n\nIf you have questions, please reply to this email.",
+    "urls": [],
+    "attachments": [
+      {
+        "filename": "Invoice_INV-29571.xlsm",
+        "type": "application/vnd.ms-excel.sheet.macroEnabled"
+      }
+    ],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "malware"
+  },
+  {
+    "id": "EMAIL-036",
+    "timestamp": "2025-06-16T07:00:00Z",
+    "from_address": "noreply@slack.com",
+    "from_display_name": "Slack",
+    "to_address": "tom.wilson@company.com",
+    "subject": "New messages in #engineering-alerts",
+    "body": "You have unread messages in #engineering-alerts:\n\n@devops-bot: Deployment v2.4.1 completed successfully at 14:32 UTC\n@monitoring: CPU usage normalized across all production nodes\n@sarah.smith: Great work on the fix, team!\n\nView in Slack: https://company.slack.com/archives/C01234567\n\n---\nManage notification settings: https://company.slack.com/account/notifications",
+    "urls": [
+      "https://company.slack.com/archives/C01234567",
+      "https://company.slack.com/account/notifications"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-012",
+    "timestamp": "2025-06-16T08:00:00Z",
+    "from_address": "scanner@company-mfp.com",
+    "from_display_name": "HP Digital Sender",
+    "to_address": "all-staff@company.com",
+    "subject": "Scanned Document - 06152025_001.pdf",
+    "body": "You have received a scanned document from HP Digital Sender.\n\nDevice: HP LaserJet MFP M528 (3rd Floor)\nPages: 3\nResolution: 300 DPI\n\nPlease see attached.",
+    "urls": [],
+    "attachments": [
+      {
+        "filename": "scan_06152025_001.pdf.exe",
+        "type": "application/x-msdownload"
+      }
+    ],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "malware"
+  },
+  {
+    "id": "EMAIL-037",
+    "timestamp": "2025-06-16T09:00:00Z",
+    "from_address": "noreply@zoom.us",
+    "from_display_name": "Zoom",
+    "to_address": "sarah.smith@company.com",
+    "subject": "Cloud recording available: Sprint Demo (June 15)",
+    "body": "Hi Sarah Smith,\n\nYour cloud recording is now available.\n\nTopic: Sprint Demo\nDate: June 15, 2025, 11:00 AM EDT\nDuration: 45 minutes\n\nView recording: https://company.zoom.us/rec/share/sprint-demo-0615\n\nThis recording will be available for 30 days.\n\nBest regards,\nZoom Team",
+    "urls": [
+      "https://company.zoom.us/rec/share/sprint-demo-0615"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-013",
+    "timestamp": "2025-06-16T10:00:00Z",
+    "from_address": "delivery@fedx-tracking.com",
+    "from_display_name": "FedEx Delivery Notification",
+    "to_address": "reception@company.com",
+    "subject": "FedEx: Delivery attempt failed - Action required",
+    "body": "Dear Customer,\n\nWe attempted to deliver your package (Tracking: 7829104653) but were unable to complete delivery.\n\nPlease download the attached shipping label and bring it to your nearest FedEx location to collect your package.\n\nIf not collected within 5 business days, the package will be returned to sender.\n\nTrack your package: https://fedx-tracking.com/track/7829104653\n\nFedEx Customer Service",
+    "urls": [
+      "https://fedx-tracking.com/track/7829104653"
+    ],
+    "attachments": [
+      {
+        "filename": "FedEx_ShippingLabel_7829104653.zip",
+        "type": "application/zip"
+      }
+    ],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "malware"
+  },
+  {
+    "id": "EMAIL-038",
+    "timestamp": "2025-06-16T11:00:00Z",
+    "from_address": "noreply@atlassian.com",
+    "from_display_name": "Jira",
+    "to_address": "mike.jones@company.com",
+    "subject": "[JIRA] (APP-1042) Updated: API rate limiter not respecting config",
+    "body": "Mike Jones updated APP-1042:\n\nStatus: In Progress \u2192 Code Review\nAssignee: Mike Jones \u2192 Sarah Smith\n\nComment by Mike Jones:\nFixed the rate limiter config parsing. The issue was that environment variable overrides weren't being applied after the YAML config load. PR #485 is ready for review.\n\nView issue: https://company.atlassian.net/browse/APP-1042",
+    "urls": [
+      "https://company.atlassian.net/browse/APP-1042"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-014",
+    "timestamp": "2025-06-16T12:00:00Z",
+    "from_address": "helpdesk@it-support-portal.net",
+    "from_display_name": "IT Help Desk",
+    "to_address": "all-staff@company.com",
+    "subject": "Critical Security Patch - Install immediately",
+    "body": "ATTENTION ALL EMPLOYEES\n\nA critical vulnerability has been discovered that affects all Windows workstations. IT has prepared an emergency patch that must be installed immediately.\n\nPlease download and run the attached patch installer.\n\nInstructions:\n1. Save the attached file to your desktop\n2. Right-click and select 'Run as Administrator'\n3. Follow the on-screen prompts\n\nThis patch must be installed before 5 PM today.\n\nIT Security Team",
+    "urls": [],
+    "attachments": [
+      {
+        "filename": "CriticalSecurityPatch_KB5028166.exe",
+        "type": "application/x-msdownload"
+      }
+    ],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "malware"
+  },
+  {
+    "id": "EMAIL-039",
+    "timestamp": "2025-06-16T13:00:00Z",
+    "from_address": "noreply@linkedin.com",
+    "from_display_name": "LinkedIn",
+    "to_address": "tom.wilson@company.com",
+    "subject": "Tom, you have 5 new connection requests",
+    "body": "Hi Tom,\n\nYou have 5 new connection requests:\n\n- Alex Rivera, Security Engineer at CrowdStrike\n- Priya Sharma, CISO at TechCorp\n- David Kim, Penetration Tester at Mandiant\n- Rachel Green, SOC Analyst at Palo Alto Networks\n- James Wilson, DevSecOps Lead at Stripe\n\nView requests: https://www.linkedin.com/mynetwork/invitation-manager/\n\nLinkedIn",
+    "urls": [
+      "https://www.linkedin.com/mynetwork/invitation-manager/"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-015",
+    "timestamp": "2025-06-16T14:00:00Z",
+    "from_address": "resume@careers-apply.com",
+    "from_display_name": "Job Application - Emily Watson",
+    "to_address": "hr@company.com",
+    "subject": "Application for Senior Developer Position",
+    "body": "Dear Hiring Manager,\n\nI am writing to express my interest in the Senior Developer position posted on your careers page.\n\nPlease find my resume and cover letter attached. I have 8 years of experience in full-stack development and would love to discuss how I can contribute to your team.\n\nBest regards,\nEmily Watson",
+    "urls": [],
+    "attachments": [
+      {
+        "filename": "Emily_Watson_Resume.docm",
+        "type": "application/vnd.ms-word.document.macroEnabled"
+      },
+      {
+        "filename": "Cover_Letter.docm",
+        "type": "application/vnd.ms-word.document.macroEnabled"
+      }
+    ],
+    "headers": {
+      "spf": "neutral",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "malware"
+  },
+  {
+    "id": "EMAIL-040",
+    "timestamp": "2025-06-16T15:00:00Z",
+    "from_address": "team@datadog.com",
+    "from_display_name": "Datadog",
+    "to_address": "devops@company.com",
+    "subject": "Weekly Infrastructure Report - June 9-15",
+    "body": "Hi there,\n\nHere's your weekly infrastructure summary:\n\nUptime: 99.97%\nTotal Alerts: 12 (8 resolved, 4 acknowledged)\nAvg Response Time: 142ms (\u21935% from last week)\nError Rate: 0.02%\n\nTop alerts:\n- High CPU on worker-node-03 (resolved)\n- Database connection pool exhaustion (resolved)\n- SSL certificate expiring in 14 days (acknowledged)\n- Disk usage >85% on log-aggregator (acknowledged)\n\nView dashboard: https://app.datadoghq.com/dashboard/company-infra\n\nDatadog",
+    "urls": [
+      "https://app.datadoghq.com/dashboard/company-infra"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-016",
+    "timestamp": "2025-06-16T16:00:00Z",
+    "from_address": "j.martinez@partnerco-consulting.com",
+    "from_display_name": "Jennifer Martinez",
+    "to_address": "sarah.smith@company.com",
+    "subject": "Re: Follow up from the Denver conference",
+    "body": "Hi Sarah,\n\nIt was great meeting you at the Denver Cybersecurity Conference last week! As discussed, I've put together the joint proposal for the Q4 security audit.\n\nPlease review the document here and let me know your thoughts:\nhttps://partnerco-consulting.com/shared/proposal-q4-audit?ref=sarah.smith\n\nLooking forward to collaborating!\n\nBest,\nJennifer Martinez\nSenior Consultant, PartnerCo",
+    "urls": [
+      "https://partnerco-consulting.com/shared/proposal-q4-audit?ref=sarah.smith"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "softfail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "spear_phishing"
+  },
+  {
+    "id": "EMAIL-041",
+    "timestamp": "2025-06-16T17:00:00Z",
+    "from_address": "noreply@company.com",
+    "from_display_name": "Password Manager",
+    "to_address": "lisa.chen@company.com",
+    "subject": "Password expiring in 7 days",
+    "body": "Hi Lisa,\n\nYour network password will expire in 7 days (June 22, 2025).\n\nPlease update your password by visiting:\nhttps://sso.company.com/change-password\n\nPassword requirements:\n- Minimum 12 characters\n- At least one uppercase, lowercase, number, and special character\n- Cannot reuse last 10 passwords\n\nNeed help? Contact IT Help Desk at ext. 4100.\n\nIT Systems",
+    "urls": [
+      "https://sso.company.com/change-password"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-017",
+    "timestamp": "2025-06-16T18:00:00Z",
+    "from_address": "alumni@university-connect.net",
+    "from_display_name": "MIT Alumni Network",
+    "to_address": "mike.jones@company.com",
+    "subject": "Mike - Your MIT alumni profile needs updating",
+    "body": "Dear Mike Jones (Class of 2012),\n\nOur records show your alumni profile hasn't been updated since 2020. We're compiling the annual alumni directory and need your current information.\n\nPlease log in to update your profile:\nhttps://university-connect.net/mit/alumni/update?id=mjones2012\n\nThe directory goes to print on July 1st, so please update by then.\n\nGo Engineers!\nMIT Alumni Association",
+    "urls": [
+      "https://university-connect.net/mit/alumni/update?id=mjones2012"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "spear_phishing"
+  },
+  {
+    "id": "EMAIL-042",
+    "timestamp": "2025-06-16T19:00:00Z",
+    "from_address": "alerts@pagerduty.com",
+    "from_display_name": "PagerDuty",
+    "to_address": "on-call@company.com",
+    "subject": "[RESOLVED] Production API latency > 500ms",
+    "body": "Incident Resolved\n\nService: Production API\nAlert: Latency > 500ms threshold\nDuration: 12 minutes\nTriggered: June 15, 2025 14:22 UTC\nResolved: June 15, 2025 14:34 UTC\n\nRoot cause: Temporary spike in database connections due to batch job overlap.\n\nView incident: https://company.pagerduty.com/incidents/P829174\n\nPagerDuty",
+    "urls": [
+      "https://company.pagerduty.com/incidents/P829174"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-018",
+    "timestamp": "2025-06-16T20:00:00Z",
+    "from_address": "noreply@internal-hr-survey.com",
+    "from_display_name": "Company HR",
+    "to_address": "all-staff@company.com",
+    "subject": "Annual Employee Satisfaction Survey - $50 Gift Card",
+    "body": "Dear Team,\n\nIt's time for our annual employee satisfaction survey! As a thank-you for participating, everyone who completes the survey will receive a $50 Amazon gift card.\n\nThe survey takes approximately 5 minutes:\nhttps://internal-hr-survey.com/company/satisfaction-2025\n\nPlease complete by Friday. Your responses are anonymous.\n\nHuman Resources Department",
+    "urls": [
+      "https://internal-hr-survey.com/company/satisfaction-2025"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "spear_phishing"
+  },
+  {
+    "id": "EMAIL-043",
+    "timestamp": "2025-06-16T21:00:00Z",
+    "from_address": "ci@company.com",
+    "from_display_name": "GitHub Actions",
+    "to_address": "mike.jones@company.com",
+    "subject": "Build #1847 passed - main branch",
+    "body": "Build #1847 completed successfully.\n\nBranch: main\nCommit: a3f8b2c - \"Fix rate limiter config parsing\"\nAuthor: Mike Jones\nDuration: 4m 23s\n\nAll checks passed:\n\u2713 Unit tests (247/247)\n\u2713 Integration tests (89/89)\n\u2713 Linting\n\u2713 Security scan\n\nView details: https://github.com/company/app/actions/runs/1847",
+    "urls": [
+      "https://github.com/company/app/actions/runs/1847"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-019",
+    "timestamp": "2025-06-16T22:00:00Z",
+    "from_address": "tech-support@z00m-meeting.com",
+    "from_display_name": "Zoom Support",
+    "to_address": "tom.wilson@company.com",
+    "subject": "Tom - Recording from yesterday's board meeting is ready",
+    "body": "Hi Tom,\n\nThe recording from yesterday's board strategy meeting is now available.\n\nView recording: https://z00m-meeting.com/rec/share/board-strategy-062025\n\nNote: This recording contains confidential information. Please do not share outside the leadership team.\n\nPasscode: BoardQ3!\n\nZoom Support",
+    "urls": [
+      "https://z00m-meeting.com/rec/share/board-strategy-062025"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "spear_phishing"
+  },
+  {
+    "id": "EMAIL-044",
+    "timestamp": "2025-06-16T23:00:00Z",
+    "from_address": "noreply@okta.com",
+    "from_display_name": "Okta",
+    "to_address": "sarah.smith@company.com",
+    "subject": "New sign-in to your account",
+    "body": "Hi Sarah,\n\nA new sign-in to your Okta account was detected:\n\nTime: June 15, 2025 3:45 PM EDT\nDevice: MacBook Pro (Chrome 125)\nLocation: New York, NY, US\nIP Address: 203.0.113.42\n\nIf this was you, no action is needed.\n\nIf you don't recognize this activity, secure your account immediately:\nhttps://company.okta.com/enduser/settings\n\nOkta Security",
+    "urls": [
+      "https://company.okta.com/enduser/settings"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-020",
+    "timestamp": "2025-06-17T00:00:00Z",
+    "from_address": "conference@blackhat-register.com",
+    "from_display_name": "Black Hat USA Registration",
+    "to_address": "security-team@company.com",
+    "subject": "Your Black Hat USA 2025 registration confirmation",
+    "body": "Thank you for registering for Black Hat USA 2025!\n\nRegistration Details:\nAttendee: Security Team, Company Inc.\nBadge Type: Business Pass\nDates: August 5-8, 2025\n\nDownload your registration confirmation and badge:\nhttps://blackhat-register.com/badge/download?reg=BH2025-8291\n\nImportant: Please complete the health screening form before arrival:\nhttps://blackhat-register.com/health-screen?reg=BH2025-8291\n\nSee you in Las Vegas!\nBlack Hat Registration Team",
+    "urls": [
+      "https://blackhat-register.com/badge/download?reg=BH2025-8291",
+      "https://blackhat-register.com/health-screen?reg=BH2025-8291"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "spear_phishing"
+  },
+  {
+    "id": "EMAIL-045",
+    "timestamp": "2025-06-17T01:00:00Z",
+    "from_address": "noreply@expensify.com",
+    "from_display_name": "Expensify",
+    "to_address": "lisa.chen@company.com",
+    "subject": "Expense report #ER-2025-0621 approved",
+    "body": "Hi Lisa,\n\nYour expense report has been approved!\n\nReport: #ER-2025-0621\nSubmitted: June 13, 2025\nApproved by: Tom Wilson\nTotal: $487.50\n\nItems:\n- AWS re:Invent conference ticket: $299.00\n- Uber to airport: $45.50\n- Team lunch (client meeting): $143.00\n\nReimbursement will be included in your next paycheck.\n\nView report: https://www.expensify.com/report?id=ER-2025-0621\n\nExpensify",
+    "urls": [
+      "https://www.expensify.com/report?id=ER-2025-0621"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-021",
+    "timestamp": "2025-06-17T02:00:00Z",
+    "from_address": "billing@subscription-renewal-notice.com",
+    "from_display_name": "Norton LifeLock",
+    "to_address": "lisa.chen@company.com",
+    "subject": "Your Norton subscription ($349.99) has been auto-renewed",
+    "body": "Dear Customer,\n\nYour Norton 360 Premium subscription has been automatically renewed.\n\nOrder Details:\nProduct: Norton 360 Premium (5 Devices)\nAmount: $349.99\nTransaction ID: NTN-2025-892741\nPayment Method: Visa ending in ****\n\nIf you did not authorize this charge, please call our billing department immediately at 1-888-555-0147 to request a full refund.\n\nThis charge will appear on your statement within 24 hours.\n\nNorton LifeLock Billing",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "vishing"
+  },
+  {
+    "id": "EMAIL-046",
+    "timestamp": "2025-06-17T03:00:00Z",
+    "from_address": "calendar@company.com",
+    "from_display_name": "Google Calendar",
+    "to_address": "john.doe@company.com",
+    "subject": "Reminder: 1:1 with Tom Wilson tomorrow at 10 AM",
+    "body": "Reminder: You have an upcoming event.\n\n1:1 with Tom Wilson\nWhen: June 16, 2025, 10:00 AM - 10:30 AM EDT\nWhere: Conference Room B / https://meet.google.com/abc-defg-hij\n\nNotes from last meeting:\n- Discuss Q3 OKRs\n- Review performance goals\n- Career development planning\n\nView event: https://calendar.google.com/calendar/event?eid=abc123",
+    "urls": [
+      "https://meet.google.com/abc-defg-hij",
+      "https://calendar.google.com/calendar/event?eid=abc123"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-022",
+    "timestamp": "2025-06-17T04:00:00Z",
+    "from_address": "support@geek-squad-renewal.com",
+    "from_display_name": "Geek Squad",
+    "to_address": "john.doe@company.com",
+    "subject": "Geek Squad: Auto-renewal confirmation - $299.99",
+    "body": "Hello,\n\nThis is to confirm that your Geek Squad Total Protection plan has been renewed for another year.\n\nRenewal Amount: $299.99\nRenewal Date: June 15, 2025\nPlan: Total Tech Support + Antivirus\n\nIf you wish to cancel and receive a refund, please contact us within 48 hours at 1-888-555-0293.\n\nThank you for choosing Geek Squad.\nBest Buy / Geek Squad Support",
+    "urls": [],
+    "attachments": [
+      {
+        "filename": "Renewal_Receipt_GS2025.pdf",
+        "type": "application/pdf"
+      }
+    ],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "vishing"
+  },
+  {
+    "id": "EMAIL-047",
+    "timestamp": "2025-06-17T05:00:00Z",
+    "from_address": "noreply@snyk.io",
+    "from_display_name": "Snyk",
+    "to_address": "security-team@company.com",
+    "subject": "New vulnerability found in company/app",
+    "body": "A new vulnerability has been found in your project.\n\nProject: company/app\nPackage: lodash@4.17.20\nSeverity: High\nCVE: CVE-2021-23337\nType: Command Injection\n\nRemediation: Upgrade lodash to version 4.17.21 or later.\n\nView details: https://app.snyk.io/org/company/project/abc123\n\nSnyk Security",
+    "urls": [
+      "https://app.snyk.io/org/company/project/abc123"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "legitimate",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-023",
+    "timestamp": "2025-06-17T06:00:00Z",
+    "from_address": "alert@bank-security-dept.com",
+    "from_display_name": "Wells Fargo Security",
+    "to_address": "tom.wilson@company.com",
+    "subject": "Suspicious transaction detected on your account",
+    "body": "SECURITY ALERT\n\nWe have detected a suspicious transaction on your Wells Fargo account:\n\nAmount: $2,847.00\nMerchant: International Wire Transfer\nLocation: Lagos, Nigeria\nDate: June 15, 2025\n\nIf you did NOT authorize this transaction, call our fraud department immediately: 1-888-555-0371\n\nDo not reply to this email. Our fraud team is available 24/7.\n\nWells Fargo Security Department",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "vishing"
+  },
+  {
+    "id": "EMAIL-048",
+    "timestamp": "2025-06-17T07:00:00Z",
+    "from_address": "newsletter@security-weekly.com",
+    "from_display_name": "Security Weekly Newsletter",
+    "to_address": "tom.wilson@company.com",
+    "subject": "BREAKING: Zero-day in popular enterprise software - Act now",
+    "body": "BREAKING NEWS\n\nA critical zero-day vulnerability has been discovered in a widely-used enterprise VPN solution. Exploits are already being seen in the wild.\n\nRead the full analysis and check if your organization is affected:\nhttps://security-weekly.com/articles/zero-day-vpn-2025\n\nKey takeaways:\n- CVE-2025-29891 affects versions 9.x and 10.x\n- No patch available yet; workaround involves disabling split tunneling\n- CISA has added this to the KEV catalog\n\nStay safe,\nSecurity Weekly Editorial Team\n\nUnsubscribe: https://security-weekly.com/unsubscribe?id=tw829",
+    "urls": [
+      "https://security-weekly.com/articles/zero-day-vpn-2025",
+      "https://security-weekly.com/unsubscribe?id=tw829"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "suspicious",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-024",
+    "timestamp": "2025-06-17T08:00:00Z",
+    "from_address": "tax-notice@irs-refund-dept.com",
+    "from_display_name": "Internal Revenue Service",
+    "to_address": "sarah.smith@company.com",
+    "subject": "IRS Notice: Unreported income detected - Call immediately",
+    "body": "OFFICIAL IRS NOTICE\n\nTaxpayer: Sarah Smith\nNotice Number: CP2000-2025-48291\n\nOur records indicate discrepancies in your 2024 tax return. Unreported income of $12,400 has been identified.\n\nFailure to respond within 7 days may result in:\n- Penalties and interest\n- Wage garnishment\n- Legal proceedings\n\nContact the IRS Resolution Center: 1-888-555-0482\nReference your notice number when calling.\n\nInternal Revenue Service\nDepartment of the Treasury",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "vishing"
+  },
+  {
+    "id": "EMAIL-049",
+    "timestamp": "2025-06-17T09:00:00Z",
+    "from_address": "partner-program@cloudflare-partners.com",
+    "from_display_name": "Cloudflare Partner Program",
+    "to_address": "it-security@company.com",
+    "subject": "Exclusive: Free Cloudflare Enterprise trial for your organization",
+    "body": "Hi Security Team,\n\nCongratulations! Your organization has been selected for an exclusive 90-day free trial of Cloudflare Enterprise.\n\nBenefits include:\n- Advanced DDoS protection\n- Web Application Firewall (WAF)\n- Bot management\n- 24/7 priority support\n\nActivate your trial: https://cloudflare-partners.com/trial/activate?org=company\n\nThis offer expires in 7 days.\n\nBest,\nCloudflare Partner Team\n\nIf you received this email in error, please disregard.",
+    "urls": [
+      "https://cloudflare-partners.com/trial/activate?org=company"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "softfail",
+      "dkim": "pass",
+      "dmarc": "pass"
+    },
+    "ground_truth": "suspicious",
+    "attack_type": null
+  },
+  {
+    "id": "EMAIL-025",
+    "timestamp": "2025-06-17T10:00:00Z",
+    "from_address": "paypal-dispute@paypal-resolution.com",
+    "from_display_name": "PayPal Resolution Center",
+    "to_address": "mike.jones@company.com",
+    "subject": "PayPal: Unauthorized transaction of $1,299.00",
+    "body": "Dear PayPal Customer,\n\nA transaction of $1,299.00 was made from your PayPal account to:\nRecipient: CryptoExchange Ltd.\nTransaction ID: PP-2025-XK829174\n\nIf this was not you, call PayPal Fraud Protection immediately:\nPhone: 1-888-555-0519\n\nOur team will help you dispute the charge and secure your account. Do not click any links - call us directly for security.\n\nPayPal Resolution Center",
+    "urls": [],
+    "attachments": [],
+    "headers": {
+      "spf": "fail",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "phishing",
+    "attack_type": "vishing"
+  },
+  {
+    "id": "EMAIL-050",
+    "timestamp": "2025-06-17T11:00:00Z",
+    "from_address": "recruiter@talent-hub-pro.com",
+    "from_display_name": "Jessica Taylor - Tech Recruiter",
+    "to_address": "mike.jones@company.com",
+    "subject": "Mike - Senior Staff Engineer role at a top FAANG company",
+    "body": "Hi Mike,\n\nI came across your profile and was impressed by your background in distributed systems. I'm recruiting for a Senior Staff Engineer role at a FAANG company (confidential until you express interest).\n\nCompensation range: $350K-$450K TC\nLocation: Remote-first\n\nIf you're interested, I'd love to schedule a quick 15-minute call. You can book directly on my calendar:\nhttps://calendly.com/jessica-taylor-recruiting/15min\n\nOr view the full job description:\nhttps://talent-hub-pro.com/jobs/senior-staff-eng-faang?ref=mike.jones\n\nBest,\nJessica Taylor\nSenior Technical Recruiter",
+    "urls": [
+      "https://calendly.com/jessica-taylor-recruiting/15min",
+      "https://talent-hub-pro.com/jobs/senior-staff-eng-faang?ref=mike.jones"
+    ],
+    "attachments": [],
+    "headers": {
+      "spf": "pass",
+      "dkim": "fail",
+      "dmarc": "fail"
+    },
+    "ground_truth": "suspicious",
+    "attack_type": null
+  }
+]
