@@ -108,3 +108,8 @@ before each delivery and update the "verified against" stamp at the top of each 
 
 _Workshop content © GTK Cyber. Dataset and threat-intel fixtures adapted from the GTK
 Cyber AI Cyber Bootcamp._
+
+
+---
+
+Built by [GTK Cyber](https://gtkcyber.com), hands-on AI and data science training for security teams.
